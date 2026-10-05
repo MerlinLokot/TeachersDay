@@ -68,16 +68,10 @@ main {
   animation: fade 1.8s ease both;
 }
 h1 {
-  font-family: Georgia, serif;
+  font-family: "Times New Roman", serif;
   font-weight: 500;
   font-size: clamp(2.5rem, 7vw, 5rem);
   line-height: 1.05;
-}
-.no {
-  font-family: "PT Serif", Georgia, serif;
-  font-weight: 400;
-  font-size: 0.8em;
-  white-space: nowrap;
 }
 .orn {
   display: block;
