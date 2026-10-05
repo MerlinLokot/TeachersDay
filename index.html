@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>С Днём учителя!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Manrope:wght@400;500&family=PT+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <svg class="defs" aria-hidden="true">
+      <defs>
+        <radialGradient id="pearl" cx="35%" cy="30%" r="75%">
+          <stop offset="0" stop-color="#fff" />
+          <stop offset=".6" stop-color="#EDEAFB" />
+          <stop offset="1" stop-color="#C5C9EE" />
+        </radialGradient>
+        <filter id="wc" x="-20%" y="-20%" width="140%" height="140%">
+          <feTurbulence
+            type="fractalNoise"
+            baseFrequency=".05"
+            numOctaves="2"
+            seed="4"
+            result="n"
+          />
+          <feDisplacementMap in="SourceGraphic" in2="n" scale="5" />
+          <feGaussianBlur stdDeviation=".5" />
+        </filter>
+        <g id="pt">
+          <ellipse cx="0" cy="-17" rx="9" ry="19" />
+          <ellipse cx="0" cy="-17" rx="9" ry="19" transform="rotate(60)" />
+          <ellipse cx="0" cy="-17" rx="9" ry="19" transform="rotate(120)" />
+          <ellipse cx="0" cy="-17" rx="9" ry="19" transform="rotate(180)" />
+          <ellipse cx="0" cy="-17" rx="9" ry="19" transform="rotate(240)" />
+          <ellipse cx="0" cy="-17" rx="9" ry="19" transform="rotate(300)" />
+        </g>
+        <g id="bloom">
+          <use href="#pt" opacity=".6" filter="url(#wc)" />
+          <use href="#pt" fill="none" stroke="#7F86CF" stroke-width="1" />
+          <use
+            href="#pt"
+            fill="#fff"
+            fill-opacity=".55"
+            stroke="#7F86CF"
+            stroke-width=".8"
+            transform="rotate(30) scale(.55)"
+          />
+          <circle
+            r="4.5"
+            fill="url(#pearl)"
+            stroke="#7F86CF"
+            stroke-width=".8"
+          />
+        </g>
+        <g id="leaf">
+          <path
+            d="M0 0Q18-10 36 0Q18 10 0 0Z"
+            fill="#C9CDF2"
+            fill-opacity=".75"
+            stroke="#8D95D6"
+            stroke-width="1"
+          />
+          <path d="M2 0H30" stroke="#8D95D6" stroke-width=".8" />
+        </g>
+        <g id="corner">
+          <g
+            fill="none"
+            stroke="#8D95D6"
+            stroke-width="1.4"
+            stroke-linecap="round"
+          >
+            <path d="M-10 412C50 340 90 250 170 190S270 100 300 70" />
+            <path d="M-10 345C40 305 120 305 190 270" />
+            <path d="M25 412C90 385 150 372 215 345" />
+            <path d="M170 190C150 150 160 110 190 80" />
+          </g>
+          <use
+            href="#leaf"
+            transform="translate(62 335) rotate(-140) scale(1.2)"
+          />
+          <use
+            href="#leaf"
+            transform="translate(98 280) rotate(-15) scale(1.1)"
+          />
+          <use
+            href="#leaf"
+            transform="translate(130 230) rotate(-150) scale(1.1)"
+          />
+          <use
+            href="#leaf"
+            transform="translate(230 140) rotate(-20) scale(1.2)"
+          />
+          <use
+            href="#leaf"
+            transform="translate(120 395) rotate(-25) scale(1.1)"
+          />
+          <use
+            href="#leaf"
+            transform="translate(160 373) rotate(-155) scale(.9)"
+          />
+          <use
+            href="#leaf"
+            transform="translate(160 118) rotate(-170) scale(.9)"
+          />
+          <use
+            href="#bloom"
+            transform="translate(170 190) scale(1.9)"
+            fill="#B9B3E6"
+          />
+          <use
+            href="#bloom"
+            transform="translate(300 70) scale(1.3)"
+            fill="#A9C4F0"
+          />
+          <use
+            href="#bloom"
+            transform="translate(190 270) scale(1.1)"
+            fill="#CFC6EE"
+          />
+          <use
+            href="#bloom"
+            transform="translate(48 308) scale(1)"
+            fill="#A9C4F0"
+          />
+          <use
+            href="#bloom"
+            transform="translate(215 345) scale(.9)"
+            fill="#B9B3E6"
+          />
+          <use
+            href="#bloom"
+            transform="translate(190 80) scale(.8)"
+            fill="#CFC6EE"
+          />
+          <g fill="url(#pearl)" stroke="#9AA0DB" stroke-width=".8">
+            <circle cx="105" cy="245" r="4.5" />
+            <circle cx="250" cy="180" r="3.5" />
+            <circle cx="262" cy="300" r="4" />
+            <circle cx="118" cy="340" r="3.5" />
+            <circle cx="258" cy="100" r="3.5" />
+            <circle cx="28" cy="372" r="4" />
+          </g>
+        </g>
+      </defs>
+    </svg>
+
+    <svg class="corner bl" viewBox="0 0 400 400" aria-hidden="true">
+      <use href="#corner" />
+    </svg>
+    <svg class="corner tr" viewBox="0 0 400 400" aria-hidden="true">
+      <use href="#corner" />
+    </svg>
+
+    <div class="page">
+      <p class="sign">от Локотецкого Александра</p>
+      <main>
+        <h1>Дорогие учителя<br />МАОУ БСШ <span class="no">№&nbsp;2</span>!</h1>
+        <svg
+          class="orn"
+          width="200"
+          height="30"
+          viewBox="0 0 200 30"
+          aria-hidden="true"
+        >
+          <path
+            d="M8 15H78M122 15H192"
+            stroke="#A9ADE0"
+            stroke-width="1"
+            stroke-linecap="round"
+          />
+          <use
+            href="#bloom"
+            transform="translate(100 15) scale(.42)"
+            fill="#B9B3E6"
+          />
+        </svg>
+        <p class="lead">Поздравляю вас с&nbsp;профессиональным праздником!</p>
+
+        <div class="duo">
+          <div>
+            <span class="pre">Спасибо вам за</span>
+            <span class="swap" id="a"
+              ><span class="on">терпение и мудрость</span><span></span
+            ></span>
+          </div>
+          <div class="sep" aria-hidden="true"></div>
+          <div>
+            <span class="pre">Желаю вам</span>
+            <span class="swap" id="b"
+              ><span class="on">крепкого здоровья</span><span></span
+            ></span>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
